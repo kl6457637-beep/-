@@ -1,12 +1,10 @@
-# 项目结构说明
+# 亚马逊广告优化工作流 (Amazon Ad Optimize Workflow)
+## 作品体验 (https://code.coze.cn/p/7610719352387731508/preview)
 
-# 本地运行
-## 运行流程
-bash scripts/local_run.sh -m flow
+基于 LangGraph 构建的亚马逊广告智能优化工作流，支持「流量清洗（止血）」和「关键词收割（拓词）」双分支并行处理，自动识别否定词、挖掘高转化长尾词，降低广告 ACOS。
 
-## 运行节点
-bash scripts/local_run.sh -m node -n node_name
-
-# 启动HTTP服务
-bash scripts/http_run.sh -m http -p 5000
-
+## 🌟 核心功能
+- **流量清洗（止血）**：自动识别高点击无转化、语义不相关的垃圾关键词，生成精准否定建议
+- **关键词收割（拓词）**：基于产品信息生成场景化长尾词，自动分级竞争度并给出出价建议
+- **并行处理**：双分支异步执行，兼顾效率与完整性
+- **低代码适配**：可直接迁移至 Coze/Dify 等低代码 AI 平台
