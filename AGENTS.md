@@ -4,7 +4,7 @@
 
 ### 节点清单
 | 节点名 | 文件位置 | 类型 | 功能描述 | 分支逻辑 | 配置文件 |
-|-------|---------|------|---------|---------|---------|
+|-------|---------|------|-------------------------|---------|---------|
 | dispatch | `nodes/dispatch_node.py` | task | 分发节点，初始化并行分支的输入数据 | → data_preprocess, expand_keywords | - |
 | data_preprocess | `nodes/data_preprocess_node.py` | task | 数据预处理，解析广告报表文本 | → stats_filter | - |
 | stats_filter | `nodes/stats_filter_node.py` | task | 统计规则筛选，识别高点击无转化的词 | → semantic_judge | - |
